@@ -42,7 +42,7 @@ if(DEFINED __RC_V0_3)
 		serial_ports/rc_uart.c
 	)
 
-	target_include_directories(robotics_cape PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
+	target_include_directories(robotics_cape PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 else()
 
