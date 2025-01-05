@@ -6,7 +6,7 @@ build:
         TAG: [docker-amd64, docker-aarch64-ci, docker-armhf]
       - IMAGE: ubuntu-build
         TAG: [docker-riscv64-ci]
-  image: beagle/${IMAGE}
+  image: registry.git.beagleboard.org/jkridner/${IMAGE}
   tags:
     - ${TAG}
   script:
@@ -18,7 +18,7 @@ build:
       - public
 
 pages:
-  image: beagle/debian-build
+  image: registry.git.beagleboard.org/jkridner/debian-build
   stage: deploy
   dependencies:
     - "build: [debian-build, docker-amd64]"
