@@ -31,7 +31,7 @@ pages:
     - apindex public/pkg
     - cd docs
     - doxygen
-    - cp -R html/* public/
+    - cp -R html/* ../public/
   artifacts:
     paths:
       - public
