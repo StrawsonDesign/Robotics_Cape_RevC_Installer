@@ -32,7 +32,7 @@ sudo dpkg -i librobotcontrol_1.0.2_armhf.deb
 
 \section installation_s2a Method 2a: Install from Pre-release Debian Package (not recommended)
 
-You can also pick up snapshot builds from the [OpenBeagle librobotcontrol pkgs subdirectory](https://beagleboard.beagleboard.io/librobotcontrol/pkgs).
+You can also pick up snapshot builds from the [OpenBeagle librobotcontrol pkg subdirectory](https://beagleboard.beagleboard.io/librobotcontrol/pkg).
 
 \section installation_s3 Method 3: Installing From Source (not recommended)
 
