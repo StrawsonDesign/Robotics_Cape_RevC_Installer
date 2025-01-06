@@ -38,9 +38,9 @@
 
     <tab type="examples" visible="yes" title="" intro=""/>
 
-    <tab type="user" url="https://github.com/StrawsonDesign/librobotcontrol" title="GitHub"/>
-    <tab type="user" url="https://github.com/StrawsonDesign/librobotcontrol/issues" title="Issue Tracker"/>
-   <tab type="user" url="https://join.slack.com/t/librobotcontrol/shared_invite/enQtNDIxNTAzNjMxMzYzLWU1OTI5MWFhOWY5ZTM4N2FiMDdlYTY5ZmU0YjYzNzJmZjk4MmU0ZGIzNmFiNmQ5MzI3NWZkOTFiYzMxMDkwZWU" title="Slack Discussion"/>
+    <tab type="user" url="https://openbeagle.org/beagleboard/librobotcontrol" title="OpenBeagle"/>
+    <tab type="user" url="https://openbeagle.org/beagleboard/librobotcontrol/-/issues" title="Issue Tracker"/>
+    <tab type="user" url="https://discord.gg/eqDnG4FXbr" title="Discord Discussion"/>
 
   </navindex>
 
