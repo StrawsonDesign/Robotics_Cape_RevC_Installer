@@ -11,8 +11,8 @@ build:
     - ${TAG}
   script:
     - make package
-    - mkdir -p public
-    - cp ../librobotcontrol_*.deb public/
+    - mkdir -p public/pkg/${IMAGE}
+    - cp ../librobotcontrol_*.deb public/pkg/${IMAGE}
   artifacts:
     paths:
       - public
@@ -24,9 +24,14 @@ pages:
     - "build: [bookworm, docker-amd64]"
     - "build: [bookworm, docker-aarch64-ci]"
     - "build: [bookworm, docker-armhf]"
-    - "build: [noble, docker-riscv64-ci]"
+      #- "build: [noble, docker-riscv64-ci]"
+  before_script:
+    - apt-get update && apt-get install -y doxygen
   script:
-    - apindex public
+    - apindex public/pkg
+    - cd docs
+    - doxygen
+    - cp -R html/* public/
   artifacts:
     paths:
       - public

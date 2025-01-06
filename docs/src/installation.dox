@@ -3,7 +3,7 @@
 
 /*! \page installation Installation & Checking Functionality
 
-\section installation_s1 Method 1: Use Official BeagleBone Image (recommended)
+\section installation_s1 Method 1: Use Official BeagleBoard.org Image (recommended)
 
 BeagleBoard.org official images come with the librobotcontrol package preinstalled. Follow the instructions at \ref flashing to make sure you are running the correct image.
 
@@ -22,7 +22,7 @@ sudo apt update && sudo apt upgrade librobotcontrol
 
 \section installation_s2 Method 2: Install from Debian Package or Repository
 
-For installation on other platforms, we provide 32bit armhf and 64-bit x86_64 Debian packages on the [GitHub releases page](https://github.com/StrawsonDesign/librobotcontrol/releases). These can be downloaded and installed like any other debian package. Obviously change the name of the file in the command below to match that of the file you downloaded.
+For installation on other platforms, we provide 32-bit armhf, 64-bit armv7 and 64-bit x86_64 Debian packages on the [OpenBeagle releases page](https://openbeagle.org/beagleboard/librobotcontrol/-/releases). These can be downloaded and installed like any other Debian package. Obviously change the name of the file in the command below to match that of the file you downloaded.
 
 ~~~{shell}
 sudo dpkg -i librobotcontrol_1.0.2_amd64.deb
@@ -30,12 +30,13 @@ or...
 sudo dpkg -i librobotcontrol_1.0.2_armhf.deb
 ~~~
 
-This package installation will also configure the device tree if you are installing on a BeagleBone Black or Black Wireless. Remember this package is still BeagleBone-focused and many of the functions are not applicable to other platforms. However many of them are platform-independent so we provide these packages.
+\section installation_s2a Method 2a: Install from Pre-release Debian Package (not recommended)
 
+You can also pick up snapshot builds from the [OpenBeagle librobotcontrol pkgs subdirectory](https://beagleboard.beagleboard.io/librobotcontrol/pkgs).
 
 \section installation_s3 Method 3: Installing From Source (not recommended)
 
-If you insist on compiling and installing from source instead of using the debian packages above, or are king enough to help beta-test and contribute source code then you are welcome to fork the [librobotcontrol repository](https://github.com/StrawsonDesign/librobotcontrol).
+If you insist on compiling and installing from source instead of using the Debian packages above, or are king enough to help beta-test and contribute source code then you are welcome to fork the [librobotcontrol repository](https://openbeagle.org/beagleboard/librobotcontrol).
 
 An installer script exists to help compile and install from source.
 
