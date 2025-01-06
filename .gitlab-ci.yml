@@ -28,8 +28,9 @@ pages:
   before_script:
     - apt-get update && apt-get install -y doxygen
   script:
-    - apindex public/pkg
-    - cd docs
+    - cd public/pkg
+    - apindex
+    - cd ../../docs
     - doxygen
     - cp -R html/* ../public/
   artifacts:
