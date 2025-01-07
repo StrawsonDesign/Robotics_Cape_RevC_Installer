@@ -4,8 +4,8 @@ build:
     matrix:
       - IMAGE: bookworm
         TAG: [docker-amd64, docker-aarch64-ci, docker-armhf]
-          #- IMAGE: noble
-          #TAG: [docker-riscv64-ci]
+      - IMAGE: noble
+        TAG: [docker-aarch64-ci, docker-riscv64-ci]
   image: registry.git.beagleboard.org/jkridner/debian-build:${IMAGE}
   tags:
     - ${TAG}
@@ -24,7 +24,8 @@ pages:
     - "build: [bookworm, docker-amd64]"
     - "build: [bookworm, docker-aarch64-ci]"
     - "build: [bookworm, docker-armhf]"
-      #- "build: [noble, docker-riscv64-ci]"
+    - "build: [noble, docker-aarch64-ci]"
+    - "build: [noble, docker-riscv64-ci]"
   before_script:
     - apt-get update && apt-get install -y doxygen
   script:
